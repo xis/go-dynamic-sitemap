@@ -51,7 +51,7 @@ func (u *URLSet) Result(s *Sitemap) error {
 		return err
 	}
 	header := []byte(xml.Header)
-	out = append(out, header...)
+	out = append(header, out...)
 	s.Data = out
 	return nil
 }
