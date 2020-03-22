@@ -36,12 +36,13 @@ func Create(prefix string, data []string) *URLSet {
 }
 
 // After @ resumes to create xml
-func (u *URLSet) After(prefix string, data []string) {
+func (u *URLSet) After(prefix string, data []string) *URLSet {
 	url := URL{}
 	for i := range data {
 		url.Loc = prefix + data[i]
 		u.URL = append(u.URL, url)
 	}
+	return u
 }
 
 // Result @ get sitemap struct adress and writes xml raw bytes on it
