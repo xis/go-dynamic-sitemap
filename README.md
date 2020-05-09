@@ -11,7 +11,7 @@ generates sitemap dynamically, for user-generated URLs
 go get github.com/xis/go-sitemap
 ```
 
-# using
+# usage
 ```go
 import "github.com/xis/go-sitemap"
 
